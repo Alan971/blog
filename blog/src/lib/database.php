@@ -9,7 +9,7 @@ class DatabaseConnection
     public function getConnection(): \PDO
     {
         if ($this->database === null) {
-            $this->database = new \PDO('mysql:host=localhost;dbname=blog;charset=utf8', 'blog', 'password');
+            $this->database = new \PDO('mysql:host=mysql;dbname=blog;charset=utf8', 'root', 'dbroot');
         }
 
         return $this->database;
