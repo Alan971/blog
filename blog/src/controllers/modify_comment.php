@@ -32,6 +32,7 @@ class ModifyComment
             header('Location: index.php?action=post&id='.$post_id );
         }
     }
+    
     // viewing comment to modify
     public function sendOldComment($post_id, $id){
         $commentRepository = new CommentRepository();
